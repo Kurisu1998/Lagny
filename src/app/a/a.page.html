@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+  	<ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>AJOUTEZ UNE EVENEMENT</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+	<form #f="ngForm" (ngSubmit)="onAddEvent(f.value)">
+    <ion-item>
+       <ion-input type="text" name="nom_evenement" [(ngModel)] = "event.nom" required="" placeholder="Nom de l'évènement">
+       </ion-input>
+    </ion-item>
+
+    <ion-item>
+       <ion-input type="text" name="ville" [(ngModel)] = "event.ville" required="" placeholder="Ville">
+       </ion-input>
+    </ion-item>
+
+    <ion-item>
+       <ion-input type="text" name="adresse" [(ngModel)] = "event.adresse" required="" placeholder="Adresse">
+       </ion-input>
+    </ion-item>
+
+    
+
+   <ion-button  expand="full" type="submit" (click)="onAddEvent(evenements)" color="success" size="large">
+      Ajoutez l'évènement
+   </ion-button>
+    
+
+   <br><br>
+   <p>
+    Note: après avoir ajouter l'évènement, vérifier à la "page Animations", si l'évènement a été ajouté.
+  </p>
+
+
+  </form>
+
+
+</ion-content>

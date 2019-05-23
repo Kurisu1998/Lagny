@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      LAGNYSCOPE
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="welcome-card">
+      <ion-img src="/assets/Lagnyscope.png"></ion-img>
+      
+      <ion-card-content>
+        <h1>Bienvenue sur l'application Lagnyscope</h1>
+      </ion-card-content>
+    </ion-card>
+
+   
+ 
+   
+
+    <ion-list lines="none" auto-hide="false" *ngFor="let p of propos">
+      
+      <ion-item [routerLink]="[p.url]">
+        <ion-icon slot="start" name="help"></ion-icon>
+        <ion-label>A propos</ion-label>
+      </ion-item>
+
+   
+    </ion-list>
+</ion-content>

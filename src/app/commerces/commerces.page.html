@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+  	<ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>COMMERCES</ion-title>
+
+    <ion-buttons slot="end" >
+       <button ion-button  (click)="onNewEvent()" >
+        <ion-icon name="add"></ion-icon>
+       </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+	  <ion-card class="welcome-card">
+    <ion-list>
+    <ion-item auto-hide="false" *ngFor="let e of evenement  | async " (click)="onDetailPlace()">
+      {{e.nom_evenement}}
+      <br>
+      {{e.ville}}
+      <br>
+      {{e.adresse}}
+    </ion-item>
+    </ion-list>
+
+  </ion-card>
+
+</ion-content>
