@@ -1,0 +1,17 @@
+# Lagny
+Pour voir l'application il faut installer nodeJS.
+Après cela, il faut utiliser l'invite de commande de nodeJS du nom de "NodeJS command prompt", 
+ensuite dirigez vous sur le projet, puis faite  "npm install -g cordova", 
+ensuite "npm install -g ionic", 
+après ces deux installations vous pouvez faire "ionic serve" si vous voulez voir le projet en version WEB 
+ou "ionic lab" pour voir le projet en version android et IOS
+Après pour que Firebase marche il faut entrer ces commandes:
+
+
+ ionic cordova plugin add cordova-plugin-firebase
+ npm install angularfire2 firebase —save
+ 
+ Aussi si vous voyez que la page "Détail de la place" est blanche, c'est normale car il faut une clé API qui marche pour que la Map s'affiche.
+ 
+ Voila normalement l'application marche
+ 
