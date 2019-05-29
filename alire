@@ -11,6 +11,9 @@ Après pour que Firebase marche il faut entrer ces commandes:
  ionic cordova plugin add cordova-plugin-firebase
  npm install angularfire2 firebase —save
  
+ ensuite pour que le module "Observable" marche il faut faire ceci:
+ - npm install rxjs-compat --save
+ 
  Aussi si vous voyez que la page "Détail de la place" est blanche, c'est normale car il faut une clé API qui marche pour que la Map s'affiche.
  
  Voila normalement l'application marche
