@@ -9,7 +9,7 @@ Après pour que Firebase marche il faut entrer ces commandes:
 
 
  ionic cordova plugin add cordova-plugin-firebase
- npm install angularfire2 firebase —save
+ npm install angularfire2 firebase --save
  
  ensuite pour que le module "Observable" marche il faut faire ceci:
  - npm install rxjs-compat --save
